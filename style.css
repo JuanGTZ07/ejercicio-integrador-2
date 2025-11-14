@@ -25,3 +25,16 @@ hr {
     padding: 5px;
     font-size: 50px;
 }
+
+#grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+#azul {
+    background-color: rgb(69, 132, 250);
+    font-size: 30px;
+    color: yellow;
+    padding: 10px;
+}
