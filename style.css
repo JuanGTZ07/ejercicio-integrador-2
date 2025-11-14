@@ -1,0 +1,27 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#IDAI {
+    background-color: rgb(22, 22, 164);
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+}
+
+hr {
+    border: none;
+    height: 10px;
+    background-color: red;
+}
+
+#titulo {
+    background-color: rgb(22, 22, 164);
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 35px;
+}
