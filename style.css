@@ -44,6 +44,7 @@ hr {
     background-color: red;
     color: yellow;
     margin: auto;
+    text-align: center;
 }
 
 #grid2 {
@@ -66,4 +67,16 @@ grid-row-gap: 0px;
 #grid2 > div {
     background-color: red;
     border: 1px solid blue;
+    margin: auto;
+    aspect-ratio: 1/1;
+    overflow: scroll;
+    
+}
+
+#grid2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: auto;
 }
