@@ -62,3 +62,8 @@ grid-row-gap: 0px;
 .div6 { grid-area: 2 / 2 / 3 / 3; }
 .div7 { grid-area: 2 / 3 / 3 / 4; }
 .div8 { grid-area: 2 / 4 / 3 / 5; }
+
+#grid2 > div {
+    background-color: red;
+    border: 1px solid blue;
+}
