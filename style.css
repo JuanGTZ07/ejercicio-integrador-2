@@ -80,3 +80,27 @@ grid-row-gap: 0px;
     display: block;
     margin: auto;
 }
+
+p {
+    text-align: center;
+}
+
+#cotizacion {
+    background-color: beige;
+    text-align: center;
+}
+
+header {
+    font-size: 50px;
+}
+
+#preciototal {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: rgb(225, 255, 166);
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 0 0 12px;
+    text-align: center;
+}

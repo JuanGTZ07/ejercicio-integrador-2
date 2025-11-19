@@ -67,6 +67,44 @@
             </a>
         </div>
     </div>
+    <div id="cotizacion">
+        <header>COTIZACION DE VEHICULOS</header>
+        <form action="" id="formulario">
+            <label for="nombre">Nombre(s)</label> <br>
+            <input type="text" id="nombre"> <br>
+            <label for="apellido">Apellidos</label> <br>
+            <input type="text" id="apellido" required> <br>
+            <label for="financiamiento">Seleccione su tipo de financiamiento</label> <br>
+            <input type="radio" name="finan" id="contado"> Contado <br>
+            <input type="radio" name="finan" id="credito"> credito <br>
+            <label for="extras"> Seleccione opciones extras</label> <br>
+            <input type="checkbox" id="AC" name="AC" value="300"> A/C <br>
+            <input type="checkbox" id="GPS" name="GPS" value="2100"> GPS <br>
+            <input type="checkbox" id="seguro" name="seguro" value="12750"> Seguro anual <br>
+            <input type="checkbox" id="QC" name="QC" value="4420"> Quemacocos <br>
+            <input type="checkbox" id="CT" name="CT" value="3000"> Camara trasera <br>
+            <input type="checkbox" id="CF" name="CF" value="3500"> Camara frontal <br>
+            <label for="marca">Seleccione la marca que desea</label> <br>
+            <select name="marca" id="marca">
+                <option value="1000000">Honda</option>
+                <option value="1200000">Nissan</option>
+                <option value="1400000">Toyota</option>
+                <option value="900000">Mazda</option>
+                <option value="800000">Hyundai</option>
+                <option value="850000">Kia</option>
+                <option value="7990000">Mitsubishi</option>
+                <option value="699999">Suzuki</option>
+            </select> <br>
+            <button type="button" onclick="calcular()">Cotizar</button>
+        </form>
+        <aside id="preciototal">
+            <p id="NA"></p>
+            <p id="COT">TOTAL $0.00</p>
+            <p id="SEGURO"></p>
+        </aside>
+    </div>
+    <hr>
+    <p>JUAN EMILIO GUTIERREZ GARCIA 45677</p>
     <script src="JavaScript.js"></script>
 </body>
 </html>
