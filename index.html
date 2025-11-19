@@ -75,8 +75,8 @@
             <label for="apellido">Apellidos</label> <br>
             <input type="text" id="apellido" required> <br>
             <label for="financiamiento">Seleccione su tipo de financiamiento</label> <br>
-            <input type="radio" name="finan" id="contado"> Contado <br>
-            <input type="radio" name="finan" id="credito"> credito <br>
+            <input type="radio" name="finan" id="contado" value="contado"> Contado <br>
+            <input type="radio" name="finan" id="credito" value="credito"> credito <br>
             <label for="extras"> Seleccione opciones extras</label> <br>
             <input type="checkbox" id="AC" name="AC" value="300"> A/C <br>
             <input type="checkbox" id="GPS" name="GPS" value="2100"> GPS <br>
@@ -96,11 +96,13 @@
                 <option value="699999">Suzuki</option>
             </select> <br>
             <button type="button" onclick="calcular()">Cotizar</button>
+            <p id="IVA">IVA incluido</p>
         </form>
         <aside id="preciototal">
             <p id="NA">Nombre y Apellido</p>
             <p id="COT">TOTAL $0.00</p>
             <p id="SEGURO">Seguro anual</p>
+            <p id="interes"></p>
         </aside>
     </div>
     <hr>
