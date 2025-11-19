@@ -7,7 +7,7 @@ function calcular() {
     var nombre = document.getElementById("nombre").value;
     var apellido = document.getElementById("apellido").value;
     var finan = formulario.finan.value;
-    var seguro = Number(document.getElementById("seguro").value);
+    var seguro = document.getElementById("seguro");
 
     document.querySelectorAll('input[type="checkbox"]').forEach(extra => {
         if(extra.checked) {
@@ -28,8 +28,12 @@ function calcular() {
         document.getElementById('interes').textContent = "";
     }
 
-    if (seguro == "12750") {
-        document.getElementById('SEGURO').innerText = "Seguro anual: $" + seguro.toLocaleString();
+    if (seguro.checked) {
+        var precioseguro = Number(seguro.value);
+        document.getElementById('SEGURO').innerText = "Seguro anual: $" + precioseguro.toLocaleString();
+    }
+    else {
+        document.getElementById('SEGURO').innerText = "";
     }
 
     document.getElementById('NA').innerText = `${nombre} ${apellido}`
